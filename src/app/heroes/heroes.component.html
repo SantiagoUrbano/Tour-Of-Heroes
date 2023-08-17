@@ -26,7 +26,7 @@
 
 <!-- Tabla -->
 
-<table class="table">
+<table class="table table-striped">
 <thead>
 
     <tr>
@@ -39,8 +39,8 @@
 
 </thead>
 
-<tbody *ngFor="let hero of heroes">
-    <tr>
+<tbody>
+    <tr *ngFor="let hero of heroes">
         <th scope="row">{{ hero.id }}</th>
         <td>{{ hero.name }}</td>
         <td>{{ hero.power }}</td>
