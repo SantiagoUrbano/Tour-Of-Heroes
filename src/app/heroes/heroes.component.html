@@ -23,3 +23,29 @@
     </button>
     </li>
 </ul>
+
+<!-- Tabla -->
+
+<table class="table">
+<thead>
+
+    <tr>
+        <th class="table-light" scope="col">id</th>
+        <th class="table-light" scope="col">Name</th>
+        <th class="table-light" scope="col">power</th>
+        <th class="table-light" scope="col">superPower</th>
+        <th class="table-light" scope="col">color</th>
+    </tr>
+
+</thead>
+
+<tbody *ngFor="let hero of heroes">
+    <tr>
+        <th scope="row">{{ hero.id }}</th>
+        <td>{{ hero.name }}</td>
+        <td>{{ hero.power }}</td>
+        <td>{{ hero.superPower }}</td>
+        <td>{{ hero.color }}</td>
+    </tr>
+</tbody>
+</table>
