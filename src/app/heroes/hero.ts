@@ -3,5 +3,6 @@ export interface Hero {
     name: string,
     power: string,
     superPower: string,
-    color:string
+    color:string,
+    imageUrl: string
 }

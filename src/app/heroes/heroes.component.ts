@@ -16,6 +16,7 @@ export class HeroesComponent {
     name: "Windstrom",
     power: "87%",
     superPower: "He drop fire",
-    color: "Black and yellow"
+    color: "Black and yellow",
+    imageUrl: ""
   }
 }

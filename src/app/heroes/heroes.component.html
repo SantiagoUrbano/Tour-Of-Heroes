@@ -49,3 +49,23 @@
     </tr>
 </tbody>
 </table>
+
+<!-- Cards de implementación -->
+
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col" *ngFor="let hero of heroes">
+            <div class="card" style="width: 18rem;">
+                <img [src]="hero.imageUrl" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ hero.id }}</h5>
+                        <h5 class="card-title">{{ hero.name }}</h5>
+                        <h5 class="card-title">{{ hero.power }}</h5>
+                        <h5 class="card-title">{{ hero.superPower }}</h5>
+                        <h5 class="card-title">{{ hero.color }}</h5>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
