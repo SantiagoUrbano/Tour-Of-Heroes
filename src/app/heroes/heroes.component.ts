@@ -17,6 +17,16 @@ export class HeroesComponent {
     console.log("Selected hero: ",hero);
   }
   
+  // Eventos de click y el mouse
+
+  onMousedown(hero: Hero): void {
+    console.log("Selected hero down: ", hero)
+  }
+
+  onMouseout(hero: Hero): void {
+    console.log("Selected hero down: ", hero)
+  }
+
   hero: Hero = {
     id: 1,
     name: "Windstrom",

@@ -17,7 +17,7 @@
 <h2 class="centroHeroes">My Heroes</h2>
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
-    <button type="button" (click)="onSelect(hero)">
+    <button type="button" (click)="onSelect(hero)" (mousedown)="onMousedown(hero)" (mouseout)="onMouseout(hero)">
         <span class="badge">{{hero.id}}</span>
         <span class="name">{{hero.name}}</span>
     </button>
