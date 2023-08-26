@@ -11,6 +11,12 @@ export class HeroesComponent {
   
   heroes = HEROES;
   
+  selectedHero?: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+    console.log("Selected hero: ",hero);
+  }
+  
   hero: Hero = {
     id: 1,
     name: "Windstrom",
